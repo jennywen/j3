@@ -2,15 +2,15 @@
 
 /* Controllers */
 
-var phonecatControllers = angular.module('phonecatControllers', []);
+var dirtyChoreControllers = angular.module('dirtyChoreControllers', []);
 
-phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
-  function($scope, Phone) {
-    $scope.phones = Phone.query();
-    $scope.orderProp = 'age';
+dirtyChoreControllers.controller('HomeCtrl', ['$scope', 'User',
+  function($scope, User) {
+    $scope.users = User.query();
+    $scope.orderProp = 'name';
   }]);
 
-phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
+dirtyChoreControllers.controller('ProfileCtrl', ['$scope', '$routeParams', 'Phone',
   function($scope, $routeParams, Phone) {
     $scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
       $scope.mainImageUrl = phone.images[0];
@@ -19,4 +19,9 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Ph
     $scope.setImage = function(imageUrl) {
       $scope.mainImageUrl = imageUrl;
     }
+  }]);
+
+dirtyChoreControllers.controller('LboardCtrl', ['$scope', 
+  function($scope) {
+    //populate list of objects { person, points}
   }]);
