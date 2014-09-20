@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-Hi testing
-==
-My name is Jad
-=======
 # AngularJS Phone Catalog Tutorial Application
 
 ## Overview
@@ -24,7 +17,6 @@ The full tutorial can be found at http://docs.angularjs.org/tutorial.
 - A good place to learn about setting up git is [here][git-github]
 - Git [home][git-home] (download, documentation)
 
->>>>>>> 60e6187a268ed122c632297ec2bed551748f8a13
 ### Node.js and Tools
 
 - Get [Node.js][node-download].
@@ -254,8 +246,6 @@ Requires a webserver that serves the application. See Running the app during dev
 ## Contact
 
 For more information on AngularJS please check out http://angularjs.org/
-<<<<<<< HEAD
-=======
 
 [7 Zip]: http://www.7-zip.org/
 [angular-seed]: https://github.com/angular/angular-seed
@@ -272,5 +262,3 @@ For more information on AngularJS please check out http://angularjs.org/
 [protractor]: https://github.com/angular/protractor
 [jasmine]: http://pivotal.github.com/jasmine/
 [karma]: http://karma-runner.github.io
->>>>>>> 2f3bac1afe6967d4997d148981f8a7bbba31636e
->>>>>>> 60e6187a268ed122c632297ec2bed551748f8a13
