@@ -6,33 +6,59 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <script src="bower_components/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
 </head>
 <body>
-  <div class="container">
-    <h5>DirtyChore</h5>
-    <h1>MY HAUS</h1>
-    <h4>Who are you?</h4>
+  <div class="container" style="padding: 50px 0">
     <div class="row">
-      <div class="col-md-7">
-        <button class="btn btn-primary btn-block btn-lg">Jenny</button>
-        <br />
-        <button class="btn btn-primary btn-block btn-lg">Name</button>
-        <br />
-        <button class="btn btn-primary btn-block btn-lg">Name</button>
-        <br />
-        <button class="btn btn-primary btn-block btn-lg">Name</button>
-        <br />
-        <button class="btn btn-primary btn-block btn-lg">Name</button>
-        <br />
-      </div>
-      <div class="col-md-5">
-        <p>Welcome to your DirtyChore dashboard!</p>
-        <a>Leaderboard</a>
-        <br />
-        <a>Settings</a>
+      <div class="col-md-6 col-md-offset-3">
+        <div class="row">
+          <br />
+          <div class="pull-left">
+            <img src="assets/home.png" />
+          </div>
+          <div class="pull-left" style="padding-left: 15px">
+            <h4 style="margin-bottom: 0">DirtyChore</h4>
+            <h1 style="margin-top: 0">MY HAUS</h1>
+          </div>
+        </div>
+
+        <h4 class="text-body"><strong>What do they call you?</strong></h4>
+        <div class="row">
+          <div class="col-md-8 left-module">
+            <button class="btn btn-primary btn-block btn-lg">Jenny</button>
+            <br />
+            <button class="btn btn-primary btn-block btn-lg">Name</button>
+            <br />
+            <button class="btn btn-primary btn-block btn-lg">Name</button>
+            <br />
+            <button class="btn btn-primary btn-block btn-lg">Name</button>
+            <br />
+            <button class="btn btn-primary btn-block btn-lg">Name</button>
+            <br />
+          </div>
+          <div class="col-md-4">
+            <p>Welcome to your DirtyChore dashboard!  Click on your name to get started.</p>
+            <a><h4 class="text-body"><strong><span>Leaderboard</span></strong></h4></a>
+            <a><h4 class="text-body"><strong>Settings</strong></h4></a>
+            <br />
+            <br />
+            <p><small>May the cleaning pods be ever in your favour.</small></p>
+          </div>
+        </div>
+
+        <footer>
+          <div>
+            Made with love by Jad, Juliet and Jenny.
+          </div>
+        </footer>
+
       </div>
     </div>
   </div>
 
+  
 </body>
 </html>

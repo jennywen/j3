@@ -54,11 +54,12 @@ textarea {
 a {
   color: @link-color;
   text-decoration: none;
-
   &:hover,
   &:focus {
     color: @link-hover-color;
-    text-decoration: underline;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 3px dotted @brand-success;
   }
 
   &:focus {
