@@ -34,7 +34,7 @@
         <h4 class="text-body"><strong>What do they call you?</strong></h4>
         <div class="row">
           <div class="col-md-8 left-module">
-            <button ng-repeat="user in users" class="btn btn-primary btn-block btn-lg">{{user.name}}</button>
+            <button ng-model="user" ng-repeat="user in users" ng-click="changeView(user.id)" class="btn btn-primary btn-block btn-lg">{{user.name}}</button>
             <br />
           </div>
           <div class="col-md-4">

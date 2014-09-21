@@ -14,15 +14,18 @@ dirtyChoreApp.config(['$routeProvider',
       when('/', {
         templateUrl: 'index.html',
         controller: 'HomeCtrl'
+      }).
+      when('/profile', {
+        templateUrl: 'partials/profile.html',
+        controller: 'ProfileCtrl'
+      }).
+      when('/leaderboard', {
+        templateUrl: 'partials/leaderboard.html',
+        controller: 'LboardCtrl'
+      }).
+      otherwise({
+        redirectTo: '/'
       });
-      // when('/profile/:userId', {
-      //   templateUrl: 'partials/profile.html',
-      //   controller: 'ProfileCtrl'
-      // }).
-      // when('/leaderboard', {
-      //   templateUrl: 'partials/leaderboard.html',
-      //   controller: 'LboardCtrl'
-      // }).
   }]);
 
 // home - static
