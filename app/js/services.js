@@ -2,11 +2,11 @@
 
 /* Services */
 
-var choreServices = angular.module('choreServices', ['ngResource']);
+var phonecatServices = angular.module('phonecatServices', ['ngResource']);
 
-choreServices.factory('User', ['$resource',
+phonecatServices.factory('Phone', ['$resource',
   function($resource){
-    return $resource('profile/:phoneId.json', {}, {
+    return $resource('phones/:phoneId.json', {}, {
       query: {method:'GET', params:{phoneId:'phones'}, isArray:true}
     });
   }]);

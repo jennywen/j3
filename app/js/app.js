@@ -2,31 +2,27 @@
 
 /* App Module */
 
-var dirtyChoreApp = angular.module('dirtyChore', [
+var phonecatApp = angular.module('phonecatApp', [
   'ngRoute',
-  'dirtyChoreControllers'
+  'phonecatAnimations',
+
+  'phonecatControllers',
+  'phonecatFilters',
+  'phonecatServices'
 ]);
 
-dirtyChoreApp.config(['$routeProvider',
+phonecatApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/', {
-        templateUrl: 'index.html',
-        controller: 'HomeCtrl'
+      when('/phones', {
+        templateUrl: 'partials/phone-list.html',
+        controller: 'PhoneListCtrl'
       }).
-      when('/profile/:userId', {
-        templateUrl: 'partials/profile.html',
-        controller: 'ProfileCtrl'
-      }).
-      when('/leaderboard', {
-        templateUrl: 'partials/leaderboard.html',
-        controller: ''
+      when('/phones/:phoneId', {
+        templateUrl: 'partials/phone-detail.html',
+        controller: 'PhoneDetailCtrl'
       }).
       otherwise({
-        redirectTo: '/index.html'
+        redirectTo: '/phones'
       });
   }]);
-
-// home - static
-// profile - need ids
-// lboard - static
