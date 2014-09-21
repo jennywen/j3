@@ -12,31 +12,31 @@ dirtyChoreControllers.controller('HomeCtrl', ['$rootScope', 'UserService',
     $rootScope.users = [{
       id: 0,
       name: "Jenny",
-      score: 0,
+      score: 3,
       currentChore: [0, -1]
     },
     {
       id: 1,
       name: "Juliet",
-      score: 0,
+      score: 3,
       currentChore: [1, -1]
     },
     {
       id: 2,
       name: "Jad",
-      score: 0,
+      score: 3,
       currentChore: [2, -1]
     },
     {
       id: 3,
-      name: "James",
-      score: 0,
+      name: "Maddy",
+      score: 7,
       currentChore: [3, -1]
     },
     {
       id: 4,
-      name: "Jarrett",
-      score: 0,
+      name: "Garrett",
+      score: 5,
       currentChore: [4, -1]
     }];
 
@@ -47,7 +47,7 @@ dirtyChoreControllers.controller('HomeCtrl', ['$rootScope', 'UserService',
     },
     {
       name: "Bathroom",
-      description: "Clean toilet bowl and surfaces."
+      description: "Clean toilet bowl, mirrors and surfaces."
     },
     {
       name: "Floors",
@@ -59,7 +59,7 @@ dirtyChoreControllers.controller('HomeCtrl', ['$rootScope', 'UserService',
     },
     {
       name: "Dishes",
-      description: "Wash thoroughly."
+      description: "Run it every night and empty in morning."
     }];
 
     // var promise = new Promise(function(resolve) {
@@ -81,6 +81,8 @@ dirtyChoreControllers.controller('HomeCtrl', ['$rootScope', 'UserService',
 
 /* Profile Page */
 dirtyChoreControllers.controller('ProfileCtrl', ['$rootScope', function($rootScope) {
+  var d = new Date();
+  var month = d.getMonth();
 
   $rootScope.changeLeaderBdView = function(user){
      $rootScope.showLeaderboardView = true;
