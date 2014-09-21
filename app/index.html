@@ -52,32 +52,30 @@
       <div ng-controller="ProfileCtrl">
         <div ng-show="showProfileView">
           <div class="row">
-          <div class="col-md-12">
-            <h3 class="text-body">Greetings [name]!  Your chore of the week is:</h3>
-            <h1 style="font-weight: 400">CHORE NAME</h1>
-            <p>Ain't no duty like a duty duty</p>
-          </div>
+            <div class="col-md-12">
+              <h3 class="text-body">Greetings [name]!  Your chore of the week is:</h3>
+              <h1 style="font-weight: 200">CHORE NAME</h1>
+              <p>Ain't no duty like a duty duty</p>
+            </div>
         </div>
       </div>
 
       <div ng-controller="LeaderboardCtrl">
         <div ng-show="showLeaderboardView">
           <div class="row">
-            <h4>Leaderboard for September</h4>
+            <div class="col-md-12">
+              <h4 class="text-body">Leaderboard</h4>
+              <h2>MONTH</h2>
+            </div>
           </div>
-          <div class="row" ng-repeat="user in users">
-              <div class="col-md-4">
-                <h3>Name:</h3>
-                <h3>{{user.name}}</h3>
+          <div ng-repeat="user in users">
+              <div class="leaderboard-bar">
+                <div class="pull-left leaderboard-bar-score">{{user.score}}</div>
+                <div class="pull-right">{{user.name}}</div>
               </div>
-              <div class="col-md-4">
-                <h3>Score:</h3>
-                <h3>{{user.score}}</h3>
-              </div>
-              <br /> 
-            </div> 
           </div>
         </div>
+      </div>
 
         <footer>
           <div>
