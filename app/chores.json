@@ -1,0 +1,23 @@
+{
+	"chores" :[
+		{
+			"name": "Garbage",
+			"description": "Take out trash and recycling when necessary."
+		},
+		{
+			"name": "Bathroom",
+			"description": "blah"
+		},
+		{
+			"name": "Floors",
+			"description": "blah"
+		},
+		{
+			"name": "Countertops",
+			"description": "blah"
+		},
+		{
+			"name": "Dishes",
+			"description": "blah"
+		}]
+}

@@ -19,53 +19,22 @@
 	  	</div>
 	  	
 	  </div>
-	  <div class="row">
+	<div class="row">
 	  	<h4>Leaderboard for September</h4>
-	  </div>
-	  <div class="row">
+	</div>
+	<div class="row" ng-repeat="user in users">
 	  	<div class="col-md-4">
 	  		<h3>Name:</h3>
+	  		<h3>{{user.name}}</h3>
 	  	</div>
 	  	<div class="col-md-4">
-	  		<h3>[score]</h3>
+	  		<h3>Score:</h3>
+	  		<h3>{{user.score}}</h3>
 	  	</div>
-	  </div>
-	  <div class="row">
-	  	<div class="col-md-4">
-	  		<h3>Name:</h3>
-	  	</div>
-	  	<div class="col-md-4">
-	  		<h3>[score]</h3>
-	  	</div>
-	  </div>
-	  <div class="row">
-  		<div class="col-md-4">
-	  		<h3>Name:</h3>
-	  	</div>
-	  	<div class="col-md-4">
-	  		<h3>[score]</h3>
-	  	</div>
- 		</div>
- 		<div class="row">
-  		<div class="col-md-4">
-	  		<h3>Name:</h3>
-	  	</div>
-	  	<div class="col-md-4">
-	  		<h3>[score]</h3>
-	  	</div>
-  	</div>
-  	<div class="row">
-  		<div class="col-md-4">
-	  		<h3>Name:</h3>
-	  	</div>
-	  	<div class="col-md-4">
-	  		<h3>[score]</h3>
-	  	</div>
-  	</div>
+	</div>
   	<br />  
 
   </div>
-
 
 </body>
 </html>
