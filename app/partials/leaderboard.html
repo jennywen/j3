@@ -1,71 +1,37 @@
 <!doctype html>
 <html lang="en" ng-app>
 <head>
-  <meta charset="utf-8">
-  <title>DirtyChore</title>
-  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
-  <link rel="stylesheet" href="../css/app.css">
-  <script src="../bower_components/angular/angular.js"></script>
+	<meta charset="utf-8">
+ 	<title>DirtyChore</title>
+  	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+  	<link rel="stylesheet" href="../css/app.css">
+  	<script src="../bower_components/angular/angular.js"></script>
 </head>
 <body>
 	<div class="container">
 		<div class="row">
-	  	<h5>DirtyChore</h5>
-	  	<div class="col-md-1">
-	  		<p>insert img</p>
-	  	</div>
-	  	<div class="col-md-4">
-	  		<h1>MY HAUS</h1>
-	  	</div>
-	  	
-	  </div>
-	  <div class="row">
-	  	<h4>Leaderboard for September</h4>
-	  </div>
-	  <div class="row">
-	  	<div class="col-md-4">
-	  		<h3>Name:</h3>
-	  	</div>
-	  	<div class="col-md-4">
-	  		<h3>[score]</h3>
-	  	</div>
-	  </div>
-	  <div class="row">
-	  	<div class="col-md-4">
-	  		<h3>Name:</h3>
-	  	</div>
-	  	<div class="col-md-4">
-	  		<h3>[score]</h3>
-	  	</div>
-	  </div>
-	  <div class="row">
-  		<div class="col-md-4">
-	  		<h3>Name:</h3>
-	  	</div>
-	  	<div class="col-md-4">
-	  		<h3>[score]</h3>
-	  	</div>
- 		</div>
- 		<div class="row">
-  		<div class="col-md-4">
-	  		<h3>Name:</h3>
-	  	</div>
-	  	<div class="col-md-4">
-	  		<h3>[score]</h3>
-	  	</div>
-  	</div>
-  	<div class="row">
-  		<div class="col-md-4">
-	  		<h3>Name:</h3>
-	  	</div>
-	  	<div class="col-md-4">
-	  		<h3>[score]</h3>
-	  	</div>
-  	</div>
-  	<br />  
-
-  </div>
-
-
+		  	<h5>DirtyChore</h5>
+		  	<div class="col-md-1">
+		  		<p>insert img</p>
+		  	</div>
+		  	<div class="col-md-4">
+		  		<h1>MY HAUS</h1>
+		  	</div>  	
+		</div>
+		<div class="row">
+		  	<h4>Leaderboard for September</h4>
+		</div>
+		<div class="row" ng-repeat="user in users">
+		  	<div class="col-md-4">
+		  		<h3>Name:</h3>
+		  		<h3>{{user.name}}</h3>
+		  	</div>
+		  	<div class="col-md-4">
+		  		<h3>Score:</h3>
+		  		<h3>{{user.score}}</h3>
+		  	</div>
+		  	<br /> 
+		</div> 
+	</div>
 </body>
 </html>
