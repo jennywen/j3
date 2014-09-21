@@ -60,6 +60,8 @@ dirtyChoreControllers.controller('HomeCtrl', ['$rootScope', 'UserService',
 dirtyChoreControllers.controller('ProfileCtrl', ['$rootScope', function($rootScope) {
 
   $rootScope.changeLeaderBdView = function(user){
+     $rootScope.showLeaderboardView = true;
+     $rootScope.showProfileView = false;
     
   };
 }]);
