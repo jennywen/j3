@@ -7,6 +7,7 @@ var dirtyChoreControllers = angular.module('dirtyChoreControllers', []);
 /* Home Page */
 dirtyChoreControllers.controller('HomeCtrl', ['$rootScope', 'UserService', 
   function($rootScope, UserService) {
+    $rootScope.showLeaderboardView = false;
     $rootScope.showProfileView = false;
     $rootScope.users = [{
       id: 0,
@@ -33,10 +34,32 @@ dirtyChoreControllers.controller('HomeCtrl', ['$rootScope', 'UserService',
       currentChore: [3, -1]
     },
     {
-      id: 0,
+      id: 4,
       name: "Jarrett",
       score: 0,
       currentChore: [4, -1]
+    }];
+
+    $rootScope.chores = [
+    {
+      name: "Garbage",
+      description: "Take out trash and recycling when necessary."
+    },
+    {
+      name: "Bathroom",
+      description: "Clean toilet bowl and surfaces."
+    },
+    {
+      name: "Floors",
+      description: "Sweep and vacuum."
+    },
+    {
+      name: "Countertops",
+      description: "Wipe down with clean towel."
+    },
+    {
+      name: "Dishes",
+      description: "Wash thoroughly."
     }];
 
     // var promise = new Promise(function(resolve) {
@@ -62,7 +85,6 @@ dirtyChoreControllers.controller('ProfileCtrl', ['$rootScope', function($rootSco
   $rootScope.changeLeaderBdView = function(user){
      $rootScope.showLeaderboardView = true;
      $rootScope.showProfileView = false;
-    
   };
 }]);
 

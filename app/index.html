@@ -48,16 +48,16 @@
               </div>
             </div>
           </div>
-        </div>
+      </div>
       <div ng-controller="ProfileCtrl">
         <div ng-show="showProfileView">
           <div class="row">
-          <div class="col-md-12">
-            <h3 class="text-body">Greetings [name]!  Your chore of the week is:</h3>
-            <h1 style="font-weight: 400">CHORE NAME</h1>
-            <p>Ain't no duty like a duty duty</p>
-          </div>
-        </div>
+            <div class="col-md-12">
+              <h3 class="text-body">Greetings {{users[currentUserId].name}}!  Your chore of the week is:</h3>
+              <h1 style="font-weight: 400">{{chores[users[currentUserId].currentChore[0]].name}}</h1>
+              <p>{{chores[users[currentUserId].currentChore[0]].description}}</p>
+            </div>
+            </div>
       </div>
 
       <div ng-controller="LeaderboardCtrl">
