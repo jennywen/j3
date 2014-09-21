@@ -1,0 +1,32 @@
+{
+	"users": [{
+			"id": "1",
+			"name": "Jenny",
+			"score": 0,
+			"currentChore": [0, -1]
+		},
+		{
+			"id": "2",
+			"name": "Juliet",
+			"score": 0,
+			"currentChore": [1, -1]
+		},
+		{
+			"id": "3",
+			"name": "Jad",
+			"score": 0,
+			"currentChore": [2, -1]
+		},
+		{
+			"id": "4",
+			"name": "James",
+			"score": 0,
+			"currentChore": [3, -1]
+		},
+		{
+			"id": "5",
+			"name": "Jarrett",
+			"score": 0,
+			"currentChore": [4, -1]
+		}]
+}

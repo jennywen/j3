@@ -2,9 +2,10 @@
 
 /* App Module */
 
-var dirtyChoreApp = angular.module('dirtyChore', [
+var dirtyChoreApp = angular.module('dirtyChoreApp', [
   'ngRoute',
-  'dirtyChoreControllers'
+  'dirtyChoreControllers',
+  'dirtyChoreServices'
 ]);
 
 dirtyChoreApp.config(['$routeProvider',
@@ -13,18 +14,15 @@ dirtyChoreApp.config(['$routeProvider',
       when('/', {
         templateUrl: 'index.html',
         controller: 'HomeCtrl'
-      }).
-      when('/profile/:userId', {
-        templateUrl: 'partials/profile.html',
-        controller: 'ProfileCtrl'
-      }).
-      when('/leaderboard', {
-        templateUrl: 'partials/leaderboard.html',
-        controller: ''
-      }).
-      otherwise({
-        redirectTo: '/index.html'
       });
+      // when('/profile/:userId', {
+      //   templateUrl: 'partials/profile.html',
+      //   controller: 'ProfileCtrl'
+      // }).
+      // when('/leaderboard', {
+      //   templateUrl: 'partials/leaderboard.html',
+      //   controller: 'LboardCtrl'
+      // }).
   }]);
 
 // home - static
