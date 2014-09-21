@@ -16,46 +16,57 @@
   <script src="js/services.js"></script>
 </head>
 
-<body ng-controller="HomeCtrl">
-  <div class="container" style="padding: 50px 0">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <div class="row">
-          <br />
-          <div class="pull-left">
-            <img src="assets/home.png" />
+<body>
+  <div ng-controller="HomeCtrl" class="container" style="padding: 50px 0">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="row">
+            <br />
+            <div class="pull-left">
+              <img src="assets/home.png" />
+            </div>
+            <div class="pull-left" style="padding-left: 15px">
+              <h4 style="margin-bottom: 0">DirtyChore</h4>
+              <h1 style="margin-top: 0">MY HAUS</h1>
+            </div>
           </div>
-          <div class="pull-left" style="padding-left: 15px">
-            <h4 style="margin-bottom: 0">DirtyChore</h4>
-            <h1 style="margin-top: 0">MY HAUS</h1>
-          </div>
-        </div>
 
-        <h4 class="text-body"><strong>What do they call you?</strong></h4>
-        <div class="row">
-          <div class="col-md-8 left-module">
-            <button ng-model="user" ng-repeat="user in users" ng-click="changeView(user.id)" class="btn btn-primary btn-block btn-lg">{{user.name}}</button>
-            <br />
+      <div ng-hide="showProfileView">
+          <h4 class="text-body"><strong>What do they call you?</strong></h4>
+          <div class="row">
+            <div class="col-md-8 left-module">
+              <button ng-model="user" ng-repeat="user in users" ng-click="changeProfileView(user.id)" class="btn btn-primary btn-block btn-lg">{{user.name}}</button>
+              <br />
+            </div>
+            <div class="col-md-4">
+              <p>Welcome to your DirtyChore dashboard!  Click on your name to get started.</p>
+              <a ng-model="user" ng-click="changeLeaderBdView(user)"><h4 class="text-body"><strong><span>Leaderboard</span></strong></h4></a>
+              <a><h4 class="text-body"><strong>Settings</strong></h4></a>
+              <br />
+              <br />
+              <p><small>May the cleaning pods be ever in your favour.</small></p>
+            </div>
           </div>
-          <div class="col-md-4">
-            <p>Welcome to your DirtyChore dashboard!  Click on your name to get started.</p>
-            <a><h4 class="text-body"><strong><span>Leaderboard</span></strong></h4></a>
-            <a><h4 class="text-body"><strong>Settings</strong></h4></a>
-            <br />
-            <br />
-            <p><small>May the cleaning pods be ever in your favour.</small></p>
-          </div>
-        </div>
 
-        <footer>
-          <div>
-            Made with love by Jad, Juliet and Jenny.
-          </div>
-        </footer>
+          <footer>
+            <div>
+              Made with love by Jad, Juliet and Jenny.
+            </div>
+          </footer>
+        </div>
       </div>
     </div>
   </div>
-
-  
+  <div ng-controller="ProfileCtrl" class="container" style="padding: 50px 0">
+    <div ng-show="showProfileView">
+      <div class="row">
+      <div class="col-md-12">
+        <h3 class="text-body">Greetings [name]!  Your chore of the week is:</h3>
+        <h1 style="font-weight: 400">CHORE NAME</h1>
+        <p>Ain't no duty like a duty duty</p>
+      </div>
+    </div>
+</div>
+  </div>
 </body>
 </html>

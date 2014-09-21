@@ -4,9 +4,6 @@
 
 var dirtyChoreServices = angular.module('dirtyChoreServices', ['ngResource']);
 
-dirtyChoreServices.factory('UserService', ['$resource',
-  function($resource){
-    return $resource('users.json', {
-      query: {method:'GET', isArray:true}
-    });
-  }]);
+dirtyChoreServices.factory('UserService', function($http) {
+	return $http.get('users.json');
+});
