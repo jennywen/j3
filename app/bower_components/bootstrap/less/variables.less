@@ -21,7 +21,7 @@
 // -------------------------
 
 @brand-primary:         #E8F3D9;
-@brand-success:         #5cb85c;
+@brand-success:         #75CDD6;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 @brand-info:            #5bc0de;
@@ -35,16 +35,16 @@
 // Links
 // -------------------------
 
-@link-color:            @brand-primary;
+@link-color:            @border-gray;
 @link-hover-color:      darken(@link-color, 15%);
 
 // Typography
 // -------------------------
 
-@font-family-sans-serif:  Biko, Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  'Biko', Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 @font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;
+@font-family-base:        'Open Sans', Arial, sans-serif;
 
 @font-size-base:          14px;
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
@@ -53,7 +53,7 @@
 @line-height-base:        1.428571429; // 20/14
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
 
-@headings-font-family:    @font-family-base;
+@headings-font-family:    @font-family-sans-serif;
 @headings-font-weight:    500;
 @headings-line-height:    1.1;
 
@@ -106,13 +106,13 @@
 // Buttons
 // -------------------------
 
-@btn-font-weight:                normal;
+@btn-font-weight:                600;
 
 @btn-default-color:              #333;
 @btn-default-bg:                 #fff;
 @btn-default-border:             #ccc;
 
-@btn-primary-color:              #fff;
+@btn-primary-color:              @border-gray;
 @btn-primary-bg:                 @brand-primary;
 @btn-primary-border:             @border-gray;
 
